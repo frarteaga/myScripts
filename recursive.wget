@@ -1,0 +1,12 @@
+wget \
+     --recursive \
+     --no-clobber \
+     --page-requisites \
+     --html-extension \
+     --convert-links \
+     --restrict-file-names=windows \
+     --domains www.site.com  \
+     --no-parent \
+     -l 1 \
+	--proxy-user=u --proxy-password=p
+         http://www.site.com
