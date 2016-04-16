@@ -19,6 +19,17 @@ def phi(n):
 	return r
 
 if __name__ == '__main__':
-	for n in sys.argv[1: ]:
-		n = int(n)
-		print n, ": ", phi(n)
+	if len(sys.argv) > 1:
+		for n in sys.argv[1: ]:
+			n = int(n)
+			print n, ": ", phi(n)
+	else:
+		n = 0
+		while 1:
+			try:
+				n = int(input())
+			except:
+				break
+			print phi(n)
+
+
